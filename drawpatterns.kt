@@ -58,6 +58,24 @@ fun main() {
         }
         println()
     }
+    println("----print Number incremental and decremental order ----")
+    for(row in rows downTo 0){
+        for(col in 0..row){
+         print("${col+1}")
+        }
+        for(col in row..rows){
+         print(" ")
+        }
+        for(col in row..rows){
+         print(" ")
+        }
+        
+        for(col in row downTo 0){
+         print("${col+1}")
+        }
+        
+        println()
+    }
 }
 //region
 /*
@@ -98,5 +116,12 @@ output
 123
 12
 1
+----print Number incremental and decremental order ----
+123456  654321
+12345    54321
+1234      4321
+123        321
+12          21
+1            1
 */
 //endregion
