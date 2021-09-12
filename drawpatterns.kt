@@ -18,6 +18,19 @@ fun main() {
         }
         println()
     }
+    println("----print Asterisk down Pyramid----")
+    for(row in rows downTo 0){
+        for(col in row..rows){
+         print(" ")
+        }
+        for(col in 0..row){
+         print("*")
+        }
+        for(col in row downTo 1){
+         print("*")
+        }
+        println()
+    }
     println("----print No Pyramid----")
     for(row in 0..rows){
         for(col in row..rows){
@@ -88,6 +101,13 @@ output
    *******
   *********
  ***********
+----print Asterisk down Pyramid----
+ ***********
+  *********
+   *******
+    *****
+     ***
+      *
 ----print Number Pyramid----
       1
      121
