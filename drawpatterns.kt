@@ -44,6 +44,16 @@ fun main() {
         }
         println()
     }
+    println("----print No by 1 space Pyramid----")
+    for(row in 0..rows){
+        for(col in row..rows){
+         print(" ")
+        }
+        for(col in 0..row){
+         print("1 ")
+        }
+        println()
+    }
     println("----print Alphabet Pyramid----")
     for(row in 0..rows){
         for(col in row..rows){
@@ -115,6 +125,13 @@ output
    1234321
   123454321
  12345654321
+----print No by 1 space Pyramid----
+      1 
+     1 1 
+    1 1 1 
+   1 1 1 1 
+  1 1 1 1 1 
+ 1 1 1 1 1 1 
 ----print Alphabet Pyramid----
       A
      ABA
